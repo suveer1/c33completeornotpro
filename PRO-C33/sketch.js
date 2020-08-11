@@ -10,6 +10,7 @@ var divisionHeight=300;
 var score =0;
 var gamestate = "start";
 var particle;
+var score = 0;
 var count = 0;
 function setup() {
   createCanvas(800, 800);
@@ -112,6 +113,10 @@ for (var i = 0; i < plinkos.length; i++) {
         } 
       } 
     } 
+  if(gamestate==="end"){
+  textsize(30);
+    text("GAME OVER",400,400);
+  }
     for (var k = 0; k < divisions.length; k++) {
        divisions[k].display(); }
 }
